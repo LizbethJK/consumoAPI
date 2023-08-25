@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<div class="card-mat-title"> PELICULAS DISPONIBLES</div>
+      <mat-card>
+        <mat-card-content >
+          <div class="mat-card-grid">
+            <div  class="mat-card-grid-item col-xs-12 col-sm-6"  *ngFor="let item of data | ObjToArray" >
+             <div class="card-content" style="display: flex; justify-content: center; align-items: center; height: 50vh;">
+                <img alt="Imagen" style="margin: 0 auto;" class="mat-content col-xs-12 col-sm-6 col-md-4 .col-lg-3 " [src]="'https://image.tmdb.org/t/p/w500/' + item.backdrop_path">
+              </div>
+              <div class="mat-font" >{{item.original_title}}</div>
+              <br>
+              <div class="card-mat-content" translate="yes">{{item.overview}}|translate </div>
+              <br>
+  <div class="example-button-row"> 
+    <button  mat-raised-button routerLink="/showmovie"  (click)="enviarDato" color="accent">Leer mas!!</button>
+    
+  </div>
+            </div>
+            
+          </div>
+        </mat-card-content>
+      </mat-card>
+      </html>

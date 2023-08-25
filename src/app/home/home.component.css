@@ -1,0 +1,69 @@
+.card-mat-title{
+  padding-bottom: 20px;
+    color: rgb(120, 22, 201);
+    text-align: center;
+    font-size: 20px;
+    font-family: cursive;
+    font-weight:700;
+    padding-top: 50px;
+
+}
+.mat-raised-button{
+  background-color: brown;
+  color: violet;
+}
+
+.mat-card-grid {
+  padding-top: 0px;
+  background-color:aliceblue;
+  align-items: center;
+    margin: 10px; /* Espacio negativo para manejar los margenes internos */
+  }
+  
+  .mat-font{
+    font-size: 20px;
+    text-align: center;
+    font-family:cursive;
+    color:blueviolet;
+  }
+.card-mat-content{
+  font-size: 20px;
+  text-align: center;
+  
+}
+  .mat-card-grid-item {
+    align-items: center;
+    padding: 10px; /* Espacio entre los elementos */
+    box-sizing: border-box;
+  }
+  
+  .example-button-row {
+    display: table-cell;
+    align-items: center;
+    max-width: 700px;
+  }
+  /* Define los estilos para cada tamaño de pantalla */
+  @media (max-width: 599px) {
+    .col-xs-12 {
+      width: 100%;
+    }
+  }
+  
+  @media (min-width: 600px) and (max-width: 959px) {
+    .col-sm-6 {
+      width: 50%;
+    }
+  }
+  
+  @media (min-width: 960px) and (max-width: 1279px) {
+    .col-md-4 {
+      width: 33.33%;
+    }
+  }
+  
+  @media (min-width: 1280px) {
+    .col-lg-3 {
+      width: 25%;
+    }
+  }
+  
